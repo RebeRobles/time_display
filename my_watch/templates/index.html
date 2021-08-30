@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es-CL">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/my_styles.css' %}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" rel="stylesheet">
+        <title>Time Display</title>
+    </head>
+    <body onload='reloj()'>
+        <!--<div class='card col-6 text-center'>
+            <div class='card-header'>
+                <h2 class ='card-text text-center'>Date | Hour</h2>
+
+            </div>
+            <div class='card-body '>
+                <h1 class="text-card text-center">{{timelocal}}</h1>
+                <h1 class="text-card text-center">{{timelocal1}}</h1>
+            </div>
+        </div>-->
+            <hr>
+        <div class="card col-6 text-center">
+            <div class = 'card-header'>
+            <h2>Clock</h2>
+            </div>
+            <div class = 'card-body'>
+                <h2 id="time" class='main_time' ></h2>
+            </div>
+        </div>
+            <!-- Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js"  crossorigin="anonymous"></script>
+            <script src="{%  static 'js/time.js'%}"></script>
+    </body>
+</html>
